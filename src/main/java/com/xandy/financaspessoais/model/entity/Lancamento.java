@@ -1,7 +1,6 @@
 package com.xandy.financaspessoais.model.entity;
 
 import java.math.BigDecimal;
-
 import java.time.LocalDate; // Import correto para LocalDate
 
 import com.xandy.financaspessoais.model.enums.StatusLancamento;
