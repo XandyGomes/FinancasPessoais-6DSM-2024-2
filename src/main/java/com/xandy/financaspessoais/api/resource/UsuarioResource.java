@@ -11,18 +11,17 @@ import com.xandy.financaspessoais.api.dto.UsuarioDTO;
 import com.xandy.financaspessoais.exception.ErroAutenticacao;
 import com.xandy.financaspessoais.exception.RegraNegocioException;
 import com.xandy.financaspessoais.model.entity.Usuario;
+import com.xandy.financaspessoais.service.LancamentoService;
 import com.xandy.financaspessoais.service.UsuarioService;
+
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/usuarios")
+@RequiredArgsConstructor
 public class UsuarioResource {
 	
-	private UsuarioService service;
-
-	public UsuarioResource(UsuarioService service) {
-		super();
-		this.service = service;
-	}
+	private final UsuarioService service;
 
 	@PostMapping
 	public ResponseEntity salvar( @RequestBody UsuarioDTO dto) {
