@@ -96,4 +96,10 @@ public class LancamentoServiceImpl implements LancamentoService {
 	public Optional<Lancamento> obterPorId(Long id) {
 		return repository.findById(id);
 	}
+
+	@Override
+	public BigDecimal obterSaldoPorUsuario(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
