@@ -131,9 +131,5 @@ public class LancamentoResource {
 		}).orElseGet(() -> new ResponseEntity("Lançamento não encontrado na base de Dados", HttpStatus.BAD_REQUEST));
 	}
 
-	@GetMapping("{id}/saldo")
-	public ResponseEntity obterSaldo(@PathVariable("id") Long id) {
-
-	}
 
 }
