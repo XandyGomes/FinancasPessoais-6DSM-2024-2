@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.19.0",
+    "axios": "^1.7.7",
     "bootswatch": "^4.3.1",
     "classnames": "^2.2.6",
     "currency-formatter": "^1.5.5",
